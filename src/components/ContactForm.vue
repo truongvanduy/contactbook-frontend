@@ -44,7 +44,7 @@ function deleteContact() {
 
 <template>
   <Form
-    @sumit="submitContact"
+    @submit="submitContact"
     :validation-schema="contactFormSchema">
     <div class="form-group">
       <label for="name">Tên</label>
@@ -105,6 +105,7 @@ function deleteContact() {
     </div>
     <div class="form-group">
       <button
+        type="button"
         class="btn btn-primary"
         @click="submitContact">
         Lưu
